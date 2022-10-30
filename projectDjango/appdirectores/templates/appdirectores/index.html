@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Dominguez Django</title>
+</head>
+<body>
+    <div>
+       <form method='GET'>
+        <label for='pregunta'>Buscar Director:</label> 
+        <input value='{{query}}' name='pregunta' type='text'placeholder='Director'></input>
+        <input type='submit' value='Buscar'>
+       </form>
+    </div>
+          
+    <div> 
+        {% if query %}
+            {% for dir in director %}
+                <h2>Director: "{{dir.Name}} {{dir.Last_Name}}"</h2>
+                <p> Movie: {{dir.Name_Movie}}</p>
+                <p> Description: {{dir.Description|linebreaksbr}}</p>
+            {% endfor %}
+        {% endif %}
+        
+    </div>
+</body>
+</html>
