@@ -1,2 +1,2 @@
 # OpenBootCamp
-Nuevo proyecto para mi diseñado en el aprendizaje de python en OpenBootCamp. 
+Nuevo proyecto para mi diseñado en el aprendizaje de back-end en OpenBootCamp. 
